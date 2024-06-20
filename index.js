@@ -8,7 +8,7 @@ const myMiddleware = (req, res, next) => {
     console.log('Request URL:', req.originalUrl);
     next();
 }
-const SERVER_PORT = 3000;
+const SERVER_PORT = process.env.PORT || 3000;
 
 //Global Middleware
 app.use(myMiddleware);
