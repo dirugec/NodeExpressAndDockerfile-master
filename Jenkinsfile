@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "pritamworld/c088-assignment-4"// cnage for my data
+    imagename = "dirugec/my-nodejs-app"// cnage for my data
     registryCredential = 'dockerhubaccount'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/ShivaniSehgal07/NodeExpressDockerApp.git', branch: 'main'])//change for mi data
+        git([url: 'https://github.com/dirugec/NodeExpressAndDockerfile-master.git', branch: 'main'])//change for mi data
  
       }
     }
